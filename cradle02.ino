@@ -71,27 +71,21 @@ void loop() {
       digitalWrite(I4, LOW);
     }
   }
-
-
 }
 
 void runM1()
 {
   analogWrite(E1, 153); // Run in half speed
-  analogWrite(E2, 255); // Run in full speed
-
+  delay(100);
   digitalWrite(I1, HIGH);
   digitalWrite(I2, LOW);
-  digitalWrite(I3, HIGH);
-  digitalWrite(I4, LOW);
+
 }
 void stopM1()
 {
   digitalWrite(E1, 0);
-  digitalWrite(E2, 0);
-
+  delay(100);
   digitalWrite(I1, LOW);
   digitalWrite(I2, LOW);
-  digitalWrite(I3, LOW);
-  digitalWrite(I4, LOW);
+
 }
